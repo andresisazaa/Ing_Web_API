@@ -23,7 +23,7 @@ const getStudentsToUpdate = (students, rule, currentGrade) => {
         case rules.LESS_THAN:
             studentsToUpdate = students.filter(s => s.grade < currentGrade);
             break;
-        case 'EQUALS_TO':
+        case rules.EQUALS_TO:
             studentsToUpdate = students.filter(s => s.grade === currentGrade);
             break;
     }

@@ -77,7 +77,7 @@ const updatedStudentCtr = async (req, res) => {
     if (!updatedStudent) {
       return res
         .status(httpStatus.NOT_FOUND)
-        .send({ message: 'Student not updated' });
+        .send({ message: 'Student not found' });
     } else if (updatedStudent) {
       return res
         .status(httpStatus.OK)
